@@ -1,0 +1,33 @@
+
+    {%extends "layout.html"%}
+    {%block body%}
+<div>
+    <h1>Lista de personas</h1>
+    <a href="nuevapersona">Agregar</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nombre</td>
+                <td>Email</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tbody>
+                <!--El bloque de abajo es para agregar codigo de python, algo parecido como con php -->
+                {% for persona in personas %} 
+                    <tr>
+                        <td>{{persona.id}}</td>
+                        <td>{{persona.nombre}} {{persona.apellido}}</td>
+                        <td>{{persona.email}}</td>
+                        <td><a href="editarPersona/{{persona.id}}">Editar</a></td>
+                        <td><a href="detallePersona/{{persona.id}}">Detalle</a></td>
+                        <td><a href="EliminarPersona/{{persona.id}}">Eliminar</a></td>
+                    </tr>
+                {%endfor%}
+            </tbody>
+        </thead>
+    </table>
+</div>
+{%endblock%}

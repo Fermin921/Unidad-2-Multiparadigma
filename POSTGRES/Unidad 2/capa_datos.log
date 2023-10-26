@@ -1,0 +1,21 @@
+$I:40:48 AM : ERROR [update.py] : 27 la sintaxis de entrada no es v�lida para tipo integer: �Fermin�
+LINE 1: Update CLIENTE SET Nombre='1' WHERE ID = 'Fermin'
+                                                ^
+
+$I:41:46 AM : DEBUG [update.py] : 25 Registros Insertados: {registrosInsertados}
+$I:51:01 AM : ERROR [Conexion2.py] : 33 could not match 2 port numbers to 1 hosts
+
+$I:11:04 AM : ERROR [Conexion2.py] : 33 could not match 2 port numbers to 1 hosts
+
+$I:13:39 AM : ERROR [Conexion2.py] : 34 could not match 2 port numbers to 1 hosts
+
+$I:14:06 AM : ERROR [Conexion2.py] : 34 could not match 2 port numbers to 1 hosts
+
+$I:14:50 AM : ERROR [Conexion2.py] : 34 could not match 2 port numbers to 1 hosts
+
+$I:15:09 AM : ERROR [Conexion2.py] : 34 could not match 2 port numbers to 1 hosts
+
+$I:21:25 AM : ERROR [Conexion2.py] : 34 could not match 2 port numbers to 1 hosts
+
+$I:22:51 AM : ERROR [Conexion2.py] : 34 
+$I:25:57 AM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x000001E797B34D00; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>

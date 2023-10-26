@@ -1,0 +1,13 @@
+{%extends "layout.html"%}
+{%block body%}
+<div>
+    <h1>
+        {{persona.id}}
+        {{persona.nombre}}
+        {{persona.apellido}}
+        {{persona.email}}
+    </h1>
+    
+    <a href="{% url 'ListadoPersonas' %}"> Regresar </a>
+</div>
+{%endblock%}
