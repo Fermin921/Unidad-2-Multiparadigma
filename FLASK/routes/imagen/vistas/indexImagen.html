@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>Listado de Imagenes</h1>
+
+    <div>
+        <a href="{{url_for('appimagen.agregarImagen')}}">Agregar Imagen</a>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for imagen in imagenes %}
+                <tr>
+                    <td>{{imagen.id}}</td>
+                    <td></td>
+                    <td>
+                        <a href="leerImagen/{{imagen.id}}">Leer Imagen</a>
+                    </td>
+                </tr>             
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

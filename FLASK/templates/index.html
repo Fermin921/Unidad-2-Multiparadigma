@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>Listado de Personas</h1>
+    <div>
+        <a href="{{url_for('appersona.agregar')}}">Agregar Persona</a>
+    </div>
+    <div>
+        <a href="{{url_for('appimagen.indexImagen')}}">Agregar Imagen</a>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for persona in personas %}
+                <tr>
+                    <td>{{persona.id}}</td>
+                    <td>{{persona.nombre}}</td>
+                    <td>{{persona.apellido}}</td>
+                    <td>{{persona.email}}</td>
+                    <td></td>
+                    <td>
+                        <a href="editar/{{persona.id}}">Editar</a>
+                        <a href="eliminar/{{persona.id}}">Eliminar</a> 
+                    </td>
+                </tr>
+                
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

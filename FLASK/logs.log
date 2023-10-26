@@ -1,0 +1,623 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2023 08:15:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2023 08:15:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /agregar [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\persona\personas.py", line 24, in agregar
+    return render_template('agregra.html',forma=personaForm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: agregra.html
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2023 08:15:22] "[35m[1mGET /agregar HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /agregar [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\persona\personas.py", line 24, in agregar
+    return render_template('agregra.html',forma=personaForm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: agregra.html
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2023 08:15:31] "[35m[1mGET /agregar HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2023 09:11:12] "GET / HTTP/1.1" 200 -
+ERROR:app:Exception on /agregar [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\persona\personas.py", line 24, in agregar
+    return render_template('agregra.html',forma=personaForm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: agregra.html
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2023 09:11:14] "[35m[1mGET /agregar HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:08:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:08:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /agregar [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\persona\personas.py", line 24, in agregar
+    return render_template('agregra.html',forma=personaForm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: agregra.html
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:09:09] "[35m[1mGET /agregar HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /agregar [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\persona\personas.py", line 24, in agregar
+    return render_template('agregar.html',forma=personaForm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: agregra.html
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:45:56] "[35m[1mGET /agregar HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:45:59] "GET / HTTP/1.1" 200 -
+ERROR:app:Exception on /agregar [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\persona\personas.py", line 24, in agregar
+    return render_template('agregar.html',forma=personaForm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: agregra.html
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:46:00] "[35m[1mGET /agregar HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:46:34] "GET / HTTP/1.1" 200 -
+ERROR:app:Exception on /agregar [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\persona\personas.py", line 24, in agregar
+    return render_template('agregar.html',forma=personaForm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: agregra.html
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:46:35] "[35m[1mGET /agregar HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:47:26] "GET / HTTP/1.1" 200 -
+ERROR:app:Exception on /agregar [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\persona\personas.py", line 24, in agregar
+    return render_template('agregar.html',forma=personaForm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: agregra.html
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:47:28] "[35m[1mGET /agregar HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:48:55] "GET / HTTP/1.1" 200 -
+ERROR:app:Exception on /agregar [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\persona\personas.py", line 24, in agregar
+    return render_template('agregar.html',forma=personaForm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: agregra.html
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:48:57] "[35m[1mGET /agregar HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:49:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:49:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /agregar [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\persona\personas.py", line 24, in agregar
+    return render_template('agregar.html',forma=personaForm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: agregra.html
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:49:23] "[35m[1mGET /agregar HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:56:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:56:11] "GET / HTTP/1.1" 200 -
+ERROR:app:Exception on /agregar [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\persona\personas.py", line 24, in agregar
+    return render_template('agregar.html',forma=personaForm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: agregra.html
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:56:12] "[35m[1mGET /agregar HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:57:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:57:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:57:26] "GET /agregar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:59:31] "[32mPOST /agregar HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 20:59:31] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:00:48] "[32mGET /eliminar/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:00:48] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:00:50] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:01:31] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:03:04] "GET /agregar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:03:15] "[32mPOST /agregar HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:03:15] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:03:31] "GET /editar/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:03:45] "[32mPOST /editar/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:03:45] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:07:30] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:08:52] "POST /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:11:16] "GET /leerImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:15:15] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:15:36] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:16:35] "POST /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:17:13] "GET /leerImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:17:48] "GET /leerImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:17:49] "GET /leerImagen HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:18:09] "GET /leerImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:18:10] "GET /leerImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:18:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:18:23] "GET /leerImagen HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:19:16] "GET /leerImagen HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:20:26] "GET /leerImagen HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:41:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:41:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:41:37] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:42:29] "GET /leerImagen/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:42:36] "GET /leerImagen/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:42:55] "GET /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:43:02] "GET /leerImagen/1 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:44:18] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:44:20] "GET /leerImagen/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:44:34] "GET /leerImagen/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:44:37] "GET /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:44:42] "POST /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:45:16] "POST /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:45:20] "POST /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:45:21] "GET /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:45:23] "GET /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:45:26] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:45:46] "GET /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:45:54] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:47:03] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:47:04] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:47:05] "GET /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:47:12] "POST /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:47:13] "GET /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:47:15] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:47:19] "GET /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:47:24] "POST /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:47:26] "GET /agregarImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:47:28] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:47:31] "GET /leerImagen/7 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:50:12] "GET /indexImagen HTTP/1.1" 200 -
+ERROR:app:Exception on /leerImagen/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\imagen\imagen.py", line 21, in leerImagen
+    imagen=Imagenes.query.filter_by(id).first().renderData
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.filter_by() takes 1 positional argument but 2 were given
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:50:13] "[35m[1mGET /leerImagen/1 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /leerImagen/7 [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\imagen\imagen.py", line 21, in leerImagen
+    imagen=Imagenes.query.filter_by(id).first().renderData
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.filter_by() takes 1 positional argument but 2 were given
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:50:17] "[35m[1mGET /leerImagen/7 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /leerImagen/7 [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Ultimo\routes\imagen\imagen.py", line 21, in leerImagen
+    imagen=Imagenes.query.filter_by(id).first().renderData
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.filter_by() takes 1 positional argument but 2 were given
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:50:20] "[35m[1mGET /leerImagen/7 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:51:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:51:13] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:51:15] "GET /indexImagen HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:51:17] "GET /leerImagen/7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:51:22] "GET /leerImagen/6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:51:26] "GET /leerImagen/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:51:28] "GET /leerImagen/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:51:32] "GET /leerImagen/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2023 21:51:35] "GET /leerImagen/1 HTTP/1.1" 200 -
